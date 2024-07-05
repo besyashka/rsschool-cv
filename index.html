@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>CV</title>
+   <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+   <div class="wrapper">
+      <header>
+         <nav class="navigation">
+            <ul class="navigation_list">
+               <li class="navigation_item"><a href="#about-me" class="link">About me</a></li>
+               <li class="navigation_item"><a href="#contacts" class="link">Contacts</a></li>
+               <li class="navigation_item"><a href="#skills" class="link">Skill</a></li>
+               <li class="navigation_item"><a href="#code" class="link">Code</a></li>
+               <li class="navigation_item"><a href="#projects" class="link">Projects</a></li>
+               <li class="navigation_item"><a href="#courses" class="link">Courses</a></li>
+               <li class="navigation_item"><a href="#education-english" class="link">Education/English</a></li>
+            </ul>
+         </nav>
+      </header>
+      <main>
+         <section class="section" id="about-me">
+            <div class="profile_img">
+               <img src="./assets" alt="personal photo">
+            </div>
+            <div class="about_me">
+               <h1>Yurina Ekaterina</h1>
+               <p>Junior Front-end Developer</p>
+               <p>Student of The Rolling Stones School. I am studying JavaScript/Front-end at RS School.</p>
+            </div>
+         </section>
+         <section class="section" id="contacts">
+            <h2>Contacts:</h2>
+            <ul class="contacts_list">
+               <li class="contacts_item">
+                  <img src="./assets" class="contacts-icon" alt="">
+                  <span>Location: Russia, Khabarovsk region, Komsomolsk-on-Amur</span>
+               </li>
+               <li class="contacts_item">
+                  <img src="./assets" class="contacts-icon" alt="">
+                  <span>Telegram: <a href="https://t.me/i_besyashka">@i_besyashka</a></span>
+               </li>
+               <li class="contacts_item">
+                  <img src="./assets" class="contacts-icon" alt="">
+                  <span>Discord: <a href="https://discord.com/channels/@besyashka">besyashka</a></span>
+               </li>
+               <li class="contacts_item">
+                  <img src="./assets" class="contacts-icon" alt="">
+                  <span>Email: <a href="https://e.mail.ru/compose">komsa_9191@mail.ru</a></span>
+               </li>
+               <li class="contacts_item">
+                  <img src="./assets" class="contacts-icon" alt="">
+                  <span>GitHub: <a href="https://github.com/besyashka">besyashka</a></span>
+               </li>
+            </ul>
+         </section>
+         <section class="section" id="skills">
+            <h2>Skills:</h2>
+            <ul class="skills_list">
+               <li class="skills_item">
+                  <img src="./assets" alt="icon" class="skills-icon">
+                  <span>HTML</span>
+               </li>
+               <li class="skills_item">
+                  <img src="./assets" alt="icon" class="skills-icon">
+                  <span>CSS</span>
+               </li>
+               <li class="skills_item">
+                  <img src="./assets" alt="icon" class="skills-icon">
+                  <span>JavaScript</span>
+               </li>
+               <li class="skills_item">
+                  <img src="./assets" alt="icon" class="skills-icon">
+                  <span>Git&amp;Github</span>
+               </li>
+               <li class="skills_item">
+                  <img src="./assets" alt="icon" class="skills-icon">
+                  <span>Sass</span>
+               </li>
+               <li class="skills_item">
+                  <img src="./assets" alt="icon" class="skills-icon">
+                  <span>Figma</span>
+               </li>
+               <li class="skills_item">
+                  <img src="./assets" alt="icon" class="skills-icon">
+                  <span>VS Code</span>
+               </li>
+            </ul>
+         </section>
+         <section class="section" id="code">
+            <h2>Code:</h2>
+            <pre>
+               <code>
+                  const createGameField = () => {
+                     for (let i = 0; i &lt; 25; i++) {
+                       const div = document.createElement("div");
+                       const gameField = document.querySelector(".game-field");
+                       div.className = "box";
+                       gameField.append(div);
+                     }
+                   };
+               </code>
+            </pre>
+         </section>
+         <section class="section" id="projects">
+            <h2>Projects:</h2>
+            <div class="projects_container">
+               <div class="projects_item">
+                  <a href="" class="link">
+                     <img src="./assets" alt="image project" class="procects-img">
+                  </a>
+                  <h3>project 1</h3>
+                  <p>info</p>
+               </div>
+               <div class="projects_item">
+                  <a href="" class="link">
+                     <img src="./assets" alt="image project" class="procects-img">
+                  </a>
+                  <h3>project 2</h3>
+                  <p>info</p>
+               </div>
+               <div class="projects_item">
+                  <a href="" class="link">
+                     <img src="./assets" alt="image project" class="procects-img">
+                  </a>
+                  <h3>project 3</h3>
+                  <p>info</p>
+               </div>
+            </div>
+         </section>
+         <section class="section" id="courses">
+            <h2>Courses:</h2>
+            <a href="#">
+               <img src="./assets" alt="certificates">
+            </a>
+            <a href="#">
+               <img src="./assets" alt="certificates">
+            </a>
+         </section>
+         <section class="section" id="education-english">
+            <h2>Education:</h2>
+            <span>secondary specialized – medical laboratory assistant</span>
+            <h2>English:</h2>
+            <span>A1</span>
+         </section>
+      </main>
+      <footer>
+         <span>&#169;2024</span>
+         <a href="https://github.com/besyashka" class="link" target="_blank">
+            <img src="./assets" alt="icon github">
+         </a>
+         <a href="https://rs.school/js/" class="link" target="_blank">
+            <img src="./assets" alt="icon rs school">
+         </a>
+      </footer>
+   </div>
+</body>
+</html>
