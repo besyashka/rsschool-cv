@@ -6,12 +6,15 @@
    <title>CV</title>
    <link rel="stylesheet" href="./style.css">
    <link rel="icon" href="./assets/favicon.ico">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
    <div class="wrapper">
       <header>
          <nav class="navigation">
-            <ul class="navigation_list">
+            <ul class="navigation_list list">
                <li class="navigation_item"><a href="#about-me" class="link">About me</a></li>
                <li class="navigation_item"><a href="#contacts" class="link">Contacts</a></li>
                <li class="navigation_item"><a href="#skills" class="link">Skill</a></li>
@@ -23,11 +26,11 @@
          </nav>
       </header>
       <main>
-         <section class="section" id="about-me">
+         <section class="section container_about_me" id="about-me">
             <div class="profile_img">
                <img src="./assets/jpg/personal-photo.jpg" alt="personal photo" width="400">
             </div>
-            <div class="about_me">
+            <div class="info_about_me">
                <h1>Yurina Ekaterina</h1>
                <p>Junior Front-end Developer</p>
                <p>Student of The Rolling Stones School. I am studying JavaScript/Front-end at RS School.</p>
@@ -35,7 +38,7 @@
          </section>
          <section class="section" id="contacts">
             <h2>Contacts:</h2>
-            <ul class="contacts_list">
+            <ul class="contacts_list list">
                <li class="contacts_item">
                   <img src="./assets/svg/location.svg" class="contacts-icon" alt="icon location">
                   <span>Location: Russia, Khabarovsk region, Komsomolsk-on-Amur</span>
@@ -60,7 +63,7 @@
          </section>
          <section class="section" id="skills">
             <h2>Skills:</h2>
-            <ul class="skills_list">
+            <ul class="skills_list list">
                <li class="skills_item">
                   <img src="./assets/svg/html.svg" alt="icon HTML" class="skills-icon">
                   <span>HTML</span>
@@ -94,7 +97,7 @@
          </section>
          <section class="section" id="code">
             <h2>Code:</h2>
-            <pre>
+            <pre class="pre">
                <code>
                   const createGameField = () => {
                      for (let i = 0; i &lt; 25; i++) {
@@ -109,24 +112,24 @@
          </section>
          <section class="section" id="projects">
             <h2>Projects:</h2>
-            <div class="projects_container">
+            <div class="container_projects">
                <div class="projects_item">
-                  <a href="https://rolling-scopes-school.github.io/besyashka-JSFE2023Q4/coffee-house/pages/home/index.html" class="link">
-                     <img src="./assets/png/coffee-house.png" alt="image site Coffee house" class="procects-img">
+                  <a href="https://rolling-scopes-school.github.io/besyashka-JSFE2023Q4/coffee-house/pages/home/index.html" class="link" target="_blank">
+                     <img src="./assets/png/coffee-house.png" alt="image site Coffee house" class="projects-img">
                   </a>
                   <h3>project - Coffee house</h3>
                   <p>info</p>
                </div>
                <div class="projects_item">
-                  <a href="https://rolling-scopes-school.github.io/besyashka-JSFE2023Q4/nonograms/" class="link">
-                     <img src="./assets/png/nonograms.png" alt="image game Nonograms" class="procects-img">
+                  <a href="https://rolling-scopes-school.github.io/besyashka-JSFE2023Q4/nonograms/" class="link" target="_blank">
+                     <img src="./assets/png/nonograms.png" alt="image game Nonograms" class="projects-img">
                   </a>
                   <h3>project - Nonograms</h3>
                   <p>info</p>
                </div>
                <div class="projects_item">
-                  <a href="https://rolling-scopes-school.github.io/besyashka-JSFE2023Q4/hangman/" class="link">
-                     <img src="./assets/png/hangman.png" alt="image game Hangman" class="procects-img">
+                  <a href="https://rolling-scopes-school.github.io/besyashka-JSFE2023Q4/hangman/" class="link" target="_blank">
+                     <img src="./assets/png/hangman.png" alt="image game Hangman" class="projects-img">
                   </a>
                   <h3>project - Hangman</h3>
                   <p>info</p>
@@ -135,27 +138,31 @@
          </section>
          <section class="section" id="courses">
             <h2>Courses:</h2>
-            <a href="#">
-               <img src="./assets/png/certificate-1.png" alt="certificate">
+            <a href="#" class="link">
+               <img src="./assets/png/certificate-1.png" alt="certificate" class="courses-img">
             </a>
-            <a href="#">
-               <img src="./assets/png/certificate-2.png" alt="certificate">
+            <a href="#" class="link">
+               <img src="./assets/png/certificate-2.png" alt="certificate" class="courses-img">
             </a>
          </section>
-         <section class="section" id="education-english">
-            <h2>Education:</h2>
-            <span>secondary specialized – medical laboratory assistant</span>
-            <h2>English:</h2>
-            <span>A1</span>
+         <section class="section container_education_english" id="education-english">
+            <div class="education">
+               <h2>Education:</h2>
+               <span>secondary specialized – medical laboratory assistant</span>
+            </div>
+            <div class="english">
+               <h2>English:</h2>
+               <span>A1</span>
+            </div>
          </section>
       </main>
-      <footer>
+      <footer class="footer">
          <span>&#169;2024</span>
          <a href="https://github.com/besyashka" class="link" target="_blank">
             <img src="./assets/svg/github.svg" alt="icon github">
          </a>
          <a href="https://rs.school/courses/javascript-ru" class="link" target="_blank">
-            <img src="./assets/svg/rs-school-logo.svg" alt="icon rs school" width="50" height="50">
+            <img src="./assets/svg/rs-school-logo.svg" alt="icon rs school" width="130">
          </a>
       </footer>
    </div>
