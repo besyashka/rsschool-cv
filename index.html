@@ -5,12 +5,16 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>CV</title>
    <link rel="stylesheet" href="./style.css">
+   <link rel="icon" href="./assets/favicon.ico">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
    <div class="wrapper">
       <header>
          <nav class="navigation">
-            <ul class="navigation_list">
+            <ul class="navigation_list list">
                <li class="navigation_item"><a href="#about-me" class="link">About me</a></li>
                <li class="navigation_item"><a href="#contacts" class="link">Contacts</a></li>
                <li class="navigation_item"><a href="#skills" class="link">Skill</a></li>
@@ -22,77 +26,80 @@
          </nav>
       </header>
       <main>
-         <section class="section" id="about-me">
+         <section class="section container_about_me" id="about-me">
             <div class="profile_img">
-               <img src="./assets" alt="personal photo">
+               <img src="./assets/jpg/personal-photo.jpg" alt="personal photo" width="400">
             </div>
-            <div class="about_me">
+            <div class="info_about_me">
                <h1>Yurina Ekaterina</h1>
                <p>Junior Front-end Developer</p>
                <p>Student of The Rolling Stones School. I am studying JavaScript/Front-end at RS School.</p>
             </div>
          </section>
-         <section class="section" id="contacts">
-            <h2>Contacts:</h2>
-            <ul class="contacts_list">
-               <li class="contacts_item">
-                  <img src="./assets" class="contacts-icon" alt="">
-                  <span>Location: Russia, Khabarovsk region, Komsomolsk-on-Amur</span>
-               </li>
-               <li class="contacts_item">
-                  <img src="./assets" class="contacts-icon" alt="">
-                  <span>Telegram: <a href="https://t.me/i_besyashka">@i_besyashka</a></span>
-               </li>
-               <li class="contacts_item">
-                  <img src="./assets" class="contacts-icon" alt="">
-                  <span>Discord: <a href="https://discord.com/channels/@besyashka">besyashka</a></span>
-               </li>
-               <li class="contacts_item">
-                  <img src="./assets" class="contacts-icon" alt="">
-                  <span>Email: <a href="https://e.mail.ru/compose">komsa_9191@mail.ru</a></span>
-               </li>
-               <li class="contacts_item">
-                  <img src="./assets" class="contacts-icon" alt="">
-                  <span>GitHub: <a href="https://github.com/besyashka">besyashka</a></span>
-               </li>
-            </ul>
-         </section>
-         <section class="section" id="skills">
-            <h2>Skills:</h2>
-            <ul class="skills_list">
-               <li class="skills_item">
-                  <img src="./assets" alt="icon" class="skills-icon">
-                  <span>HTML</span>
-               </li>
-               <li class="skills_item">
-                  <img src="./assets" alt="icon" class="skills-icon">
-                  <span>CSS</span>
-               </li>
-               <li class="skills_item">
-                  <img src="./assets" alt="icon" class="skills-icon">
-                  <span>JavaScript</span>
-               </li>
-               <li class="skills_item">
-                  <img src="./assets" alt="icon" class="skills-icon">
-                  <span>Git&amp;Github</span>
-               </li>
-               <li class="skills_item">
-                  <img src="./assets" alt="icon" class="skills-icon">
-                  <span>Sass</span>
-               </li>
-               <li class="skills_item">
-                  <img src="./assets" alt="icon" class="skills-icon">
-                  <span>Figma</span>
-               </li>
-               <li class="skills_item">
-                  <img src="./assets" alt="icon" class="skills-icon">
-                  <span>VS Code</span>
-               </li>
-            </ul>
-         </section>
+         <div class="container_contacts-skills">
+            <section class="section" id="contacts">
+               <h2>Contacts:</h2>
+               <ul class="contacts_list list">
+                  <li class="contacts_item">
+                     <img src="./assets/svg/location.svg" class="contacts-icon" alt="icon location">
+                     <span>Location: Russia, Khabarovsk region, Komsomolsk-on-Amur</span>
+                  </li>
+                  <li class="contacts_item">
+                     <img src="./assets/svg/telegram.svg" class="contacts-icon" alt="icon Telegram">
+                     <span>Telegram: <a href="https://t.me/i_besyashka" class="contacts-link">@i_besyashka</a></span>
+                  </li>
+                  <li class="contacts_item">
+                     <img src="./assets/svg/discord.svg" class="contacts-icon" alt="icon Discord">
+                     <span>Discord: <a href="https://discord.com/channels/@besyashka" class="contacts-link">besyashka</a></span>
+                  </li>
+                  <li class="contacts_item">
+                     <img src="./assets/svg/email.svg" class="contacts-icon" alt="icon Email">
+                     <span>Email: <a href="https://e.mail.ru/compose" class="contacts-link">komsa_9191@mail.ru</a></span>
+                  </li>
+                  <li class="contacts_item">
+                     <img src="./assets/svg/github.svg" class="contacts-icon" alt="icon GitHub">
+                     <span>GitHub: <a href="https://github.com/besyashka" class="contacts-link">besyashka</a></span>
+                  </li>
+               </ul>
+            </section>
+            <section class="section" id="skills">
+               <h2>Skills:</h2>
+               <ul class="skills_list list">
+                  <li class="skills_item">
+                     <img src="./assets/svg/html.svg" alt="icon HTML" class="skills-icon">
+                     <span>HTML</span>
+                  </li>
+                  <li class="skills_item">
+                     <img src="./assets/svg/css.svg" alt="icon CSS" class="skills-icon">
+                     <span>CSS</span>
+                  </li>
+                  <li class="skills_item">
+                     <img src="./assets/svg/js.svg" alt="icon JavaScript" class="skills-icon">
+                     <span>JavaScript</span>
+                  </li>
+                  <li class="skills_item">
+                     <img src="./assets/svg/git.svg" alt="icon Git" class="skills-icon">
+                     <img src="./assets/svg/github.svg" alt="icon GitHub" class="skills-icon">
+                     <span>Git&amp;Github</span>
+                  </li>
+                  <li class="skills_item">
+                     <img src="./assets/svg/sass.svg" alt="icon Sass" class="skills-icon">
+                     <span>Sass</span>
+                  </li>
+                  <li class="skills_item">
+                     <img src="./assets/svg/figma.svg" alt="icon Figma" class="skills-icon">
+                     <span>Figma</span>
+                  </li>
+                  <li class="skills_item">
+                     <img src="./assets/svg/vs-code.svg" alt="icon VS Code" class="skills-icon">
+                     <span>VS Code</span>
+                  </li>
+               </ul>
+            </section>
+         </div>
          <section class="section" id="code">
             <h2>Code:</h2>
-            <pre>
+            <pre class="pre">
                <code>
                   const createGameField = () => {
                      for (let i = 0; i &lt; 25; i++) {
@@ -107,53 +114,59 @@
          </section>
          <section class="section" id="projects">
             <h2>Projects:</h2>
-            <div class="projects_container">
+            <div class="container_projects">
                <div class="projects_item">
-                  <a href="" class="link">
-                     <img src="./assets" alt="image project" class="procects-img">
+                  <a href="https://rolling-scopes-school.github.io/besyashka-JSFE2023Q4/coffee-house/pages/home/index.html" class="link" target="_blank">
+                     <img src="./assets/png/coffee-house.png" alt="image site Coffee house" class="projects-img">
                   </a>
-                  <h3>project 1</h3>
+                  <h3>project - Coffee house</h3>
                   <p>info</p>
                </div>
                <div class="projects_item">
-                  <a href="" class="link">
-                     <img src="./assets" alt="image project" class="procects-img">
+                  <a href="https://rolling-scopes-school.github.io/besyashka-JSFE2023Q4/nonograms/" class="link" target="_blank">
+                     <img src="./assets/png/nonograms.png" alt="image game Nonograms" class="projects-img">
                   </a>
-                  <h3>project 2</h3>
+                  <h3>project - Nonograms</h3>
                   <p>info</p>
                </div>
                <div class="projects_item">
-                  <a href="" class="link">
-                     <img src="./assets" alt="image project" class="procects-img">
+                  <a href="https://rolling-scopes-school.github.io/besyashka-JSFE2023Q4/hangman/" class="link" target="_blank">
+                     <img src="./assets/png/hangman.png" alt="image game Hangman" class="projects-img">
                   </a>
-                  <h3>project 3</h3>
+                  <h3>project - Hangman</h3>
                   <p>info</p>
                </div>
             </div>
          </section>
          <section class="section" id="courses">
             <h2>Courses:</h2>
-            <a href="#">
-               <img src="./assets" alt="certificates">
-            </a>
-            <a href="#">
-               <img src="./assets" alt="certificates">
-            </a>
+            <div class="container_courses">
+               <a href="#" class="link">
+                  <img src="./assets/png/certificate-1.png" alt="certificate" class="courses-img">
+               </a>
+               <a href="#" class="link">
+                  <img src="./assets/png/certificate-2.png" alt="certificate" class="courses-img">
+               </a>
+            </div>
          </section>
-         <section class="section" id="education-english">
-            <h2>Education:</h2>
-            <span>secondary specialized – medical laboratory assistant</span>
-            <h2>English:</h2>
-            <span>A1</span>
+         <section class="section container_education_english" id="education-english">
+            <div class="education">
+               <h2>Education:</h2>
+               <span>secondary specialized – medical laboratory assistant</span>
+            </div>
+            <div class="english">
+               <h2>English:</h2>
+               <span>A1</span>
+            </div>
          </section>
       </main>
-      <footer>
+      <footer class="footer">
          <span>&#169;2024</span>
          <a href="https://github.com/besyashka" class="link" target="_blank">
-            <img src="./assets" alt="icon github">
+            <img src="./assets/svg/github.svg" alt="icon github">
          </a>
-         <a href="https://rs.school/js/" class="link" target="_blank">
-            <img src="./assets" alt="icon rs school">
+         <a href="https://rs.school/courses/javascript-ru" class="link" target="_blank">
+            <img src="./assets/svg/rs_school.svg" alt="icon rs school" width="130">
          </a>
       </footer>
    </div>
