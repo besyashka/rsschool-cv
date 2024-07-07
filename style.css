@@ -1,3 +1,121 @@
 * {
    box-sizing: border-box;
+   margin: 0;
+   scroll-behavior: smooth;
+}
+
+body {
+   font-family: "Lato", sans-serif;
+   font-size: 20px;
+   background: linear-gradient(to bottom, #000000, #F58AC0, #000000);
+}
+
+h1 {
+   font-size: 70px;
+   color: #5b09eb;
+   -webkit-text-stroke: 1px #FFFFFF;
+}
+
+.wrapper {
+   margin: 0 auto;
+   max-width: 1440px;
+   padding: 0 40px;
+   color: #FFFFFF;
+}
+
+.link {
+   text-decoration: none;
+   color: #FFFFFF;
+}
+
+.list {
+   padding: 0;
+   list-style: none;
+}
+
+.section {
+   padding: 10px 0;
+}
+
+.navigation_list {
+   display: flex;
+   justify-content: space-between;
+   font-weight: 800;
+}
+
+.container_about_me {
+   display: flex;
+   align-items: center;
+   flex-wrap: wrap;
+   gap: 60px;
+}
+
+.info_about_me {
+   width: 600px;
+}
+
+.container_contacts-skills {
+   display: flex;
+   gap: 60px;
+}
+
+.contacts_list{
+   width: 450px;
+}
+
+.contacts-link {
+   font-weight: 800;
+   color: #000000;
+}
+
+.contacts-icon,
+.skills-icon {
+   width: 30px;
+}
+
+.pre {
+   max-width: 1300px;
+   color: #FFFFFF;
+   background: #101010;
+   border: 1px solid #000000;
+}
+
+.container_projects {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   gap: 60px;
+}
+
+.projects_item {
+   width: 450px;
+}
+
+.projects-img {
+   width: 100%;
+   border-radius: 1%;
+}
+
+.container_courses {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 60px;
+}
+
+.courses-img {
+   height: 393px;
+   border-radius: 1%;
+}
+
+.container_education_english {
+   display: flex;
+   gap: 162px;
+}
+
+.footer {
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   padding: 20px 0;
+   border-top: 1px solid;
 }
