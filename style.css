@@ -21,6 +21,11 @@ h2 {
    line-height: 60px;
 }
 
+.text-dark {
+   padding: 10px;
+   color: #181718;
+}
+
 .wrapper {
    margin: 0 auto;
    max-width: 1440px;
@@ -123,11 +128,12 @@ h2 {
    display: flex;
    flex-wrap: wrap;
    justify-content: center;
-   gap: 60px;
+   gap: 30px;
+   margin: 20px 0;
 }
 
 .projects_item {
-   width: 450px;
+   width: 350px;
    padding: 5px;
    text-align: center;
    color: #000000;
@@ -144,13 +150,14 @@ h2 {
    transform: scale(1);
    transition: 0.5s ease-out;
    &:hover {
-     transform: scale(1.1);
+     transform: scale(1.05);
    }
 }
 
 .container_courses {
    display: flex;
    flex-wrap: wrap;
+   justify-content: center;
    gap: 60px;
 }
 
